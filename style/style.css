@@ -421,6 +421,57 @@ th {
 }
 
 /* =========================
+   PÁGINAS DE GESTIÓN
+========================= */
+
+.navbar-personalizada {
+    background-color: var(--color-principal);
+}
+
+.titulo-principal {
+    color: var(--color-secundario);
+}
+
+.imagen-pagina {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.formulario-personalizado {
+    border: none;
+    border-radius: 15px;
+}
+
+.tabla-personalizada {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.tabla-personalizada .table {
+    margin-bottom: 0;
+}
+
+.boton-personalizado {
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 0.6rem 1.2rem;
+    transition: transform 0.2s;
+}
+
+.boton-personalizado:hover {
+    transform: scale(1.03);
+}
+
+.footer-personalizado {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    padding: 2rem;
+}
+
+/* =========================
    TABLET
 ========================= */
 
