@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Gestor de jugadores de un torneo de fútbol.">
+    <meta name="author" content="Desarrollado por Romano Gabriel">
+    <meta name="keywords" content="fútbol, torneo, jugadores, equipos">
+
+    <title>Jugadores - Gestor de Torneos</title>
+
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+
+        <h1>Gestor de Torneos</h1>
+
+        <nav class="navegacion">
+            <a href="index.html">Inicio</a>
+            <a href="equipos.html">Equipos</a>
+            <a href="jugadores.html" class="activo">Jugadores</a>
+            <a href="partidos.html">Partidos</a>
+        </nav>
+
+    </header>
+
+
+    <main class="contenido-principal">
+
+        <section class="bienvenida">
+
+            <h2>Gestión de Jugadores</h2>
+
+            <p>
+                Desde esta sección puede agregar y consultar
+                los jugadores pertenecientes a cada equipo.
+            </p>
+
+        </section>
+
+
+        <section class="formulario">
+
+            <h2>Añadir jugador</h2>
+
+            <div class="campo">
+
+                <label for="inputNombreJugador">
+                    Nombre y apellido
+                </label>
+
+                <input
+                    id="inputNombreJugador"
+                    type="text"
+                    placeholder="Ingrese nombre y apellido"
+                >
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="inputDniJugador">
+                    DNI
+                </label>
+
+                <input
+                    id="inputDniJugador"
+                    type="number"
+                    placeholder="Ingrese el DNI"
+                >
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="inputEdadJugador">
+                    Edad
+                </label>
+
+                <input
+                    id="inputEdadJugador"
+                    type="number"
+                    placeholder="Ingrese la edad"
+                >
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="inputPosicionJugador">
+                    Posición
+                </label>
+
+                <select id="inputPosicionJugador">
+
+                    <option value="">
+                        Seleccione una posición
+                    </option>
+
+                    <option value="Arquero">
+                        Arquero
+                    </option>
+
+                    <option value="Defensor">
+                        Defensor
+                    </option>
+
+                    <option value="Mediocampista">
+                        Mediocampista
+                    </option>
+
+                    <option value="Delantero">
+                        Delantero
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="inputEquipoJugador">
+                    Equipo
+                </label>
+
+                <select id="inputEquipoJugador">
+
+                    <option value="">
+                        Seleccione un equipo
+                    </option>
+
+                    <option value="River Plate">
+                        River Plate
+                    </option>
+
+                    <option value="Boca Juniors">
+                        Boca Juniors
+                    </option>
+
+                    <option value="Racing Club">
+                        Racing Club
+                    </option>
+
+                    <option value="Independiente">
+                        Independiente
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="inputNumeroJugador">
+                    Número de camiseta
+                </label>
+
+                <input
+                    id="inputNumeroJugador"
+                    type="number"
+                    placeholder="Ingrese el número"
+                >
+
+            </div>
+
+
+            <button
+                id="btnAgregarJugador"
+                class="boton boton-jugadores"
+            >
+                Agregar Jugador
+            </button>
+
+        </section>
+
+
+        <section class="tabla-seccion">
+
+            <h2>Jugadores registrados</h2>
+
+            <div class="tabla-contenedor">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>ID</th>
+                            <th>Jugador</th>
+                            <th>DNI</th>
+                            <th>Edad</th>
+                            <th>Posición</th>
+                            <th>Equipo</th>
+                            <th>Número</th>
+                            <th>Acciones</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="tablaJugadores">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <a href="index.html" class="boton boton-volver">
+            Volver al inicio
+        </a>
+
+    </main>
+
+
+    <footer class="pie-pagina">
+
+        <p>
+            © 2026 - Gestor de Torneos de Fútbol
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
