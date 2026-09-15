@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Gestor de partidos de un torneo de fútbol.">
+    <meta name="author" content="Gestor de Torneos">
+    <meta name="keywords" content="fútbol, torneo, partidos, equipos">
+
+    <title>Partidos - Gestor de Torneos</title>
+
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+
+        <h1>Gestor de Torneos</h1>
+
+        <nav class="navegacion">
+            <a href="index.html">Inicio</a>
+            <a href="equipos.html">Equipos</a>
+            <a href="jugadores.html">Jugadores</a>
+            <a href="partidos.html" class="activo">Partidos</a>
+        </nav>
+
+    </header>
+
+
+    <main class="contenido-principal">
+
+        <section class="bienvenida">
+
+            <h2>Gestión de Partidos</h2>
+
+            <p>
+                Desde esta sección puede agregar y consultar
+                los partidos correspondientes al torneo.
+            </p>
+
+        </section>
+
+
+        <section class="formulario">
+
+            <h2>Añadir partido</h2>
+
+            <div class="campo">
+
+                <label for="inputFechaPartido">
+                    Fecha
+                </label>
+
+                <input
+                    id="inputFechaPartido"
+                    type="date"
+                >
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="inputHoraPartido">
+                    Hora
+                </label>
+
+                <input
+                    id="inputHoraPartido"
+                    type="time"
+                >
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="inputCanchaPartido">
+                    Cancha
+                </label>
+
+                <input
+                    id="inputCanchaPartido"
+                    type="text"
+                    placeholder="Ingrese el nombre de la cancha"
+                >
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="inputEquipoLocal">
+                    Equipo local
+                </label>
+
+                <select id="inputEquipoLocal">
+
+                    <option value="">
+                        Seleccione el equipo local
+                    </option>
+
+                    <option value="River Plate">
+                        River Plate
+                    </option>
+
+                    <option value="Boca Juniors">
+                        Boca Juniors
+                    </option>
+
+                    <option value="Racing Club">
+                        Racing Club
+                    </option>
+
+                    <option value="Independiente">
+                        Independiente
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="inputEquipoVisitante">
+                    Equipo visitante
+                </label>
+
+                <select id="inputEquipoVisitante">
+
+                    <option value="">
+                        Seleccione el equipo visitante
+                    </option>
+
+                    <option value="River Plate">
+                        River Plate
+                    </option>
+
+                    <option value="Boca Juniors">
+                        Boca Juniors
+                    </option>
+
+                    <option value="Racing Club">
+                        Racing Club
+                    </option>
+
+                    <option value="Independiente">
+                        Independiente
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <button
+                id="btnAgregarPartido"
+                class="boton boton-partidos"
+            >
+                Agregar Partido
+            </button>
+
+        </section>
+
+
+        <section class="tabla-seccion">
+
+            <h2>Partidos registrados</h2>
+
+            <div class="tabla-contenedor">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>ID</th>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Cancha</th>
+                            <th>Local</th>
+                            <th>Visitante</th>
+                            <th>Resultado</th>
+                            <th>Acciones</th>
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="tablaPartidos">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <a href="index.html" class="boton boton-volver">
+            Volver al inicio
+        </a>
+
+    </main>
+
+
+    <footer class="pie-pagina">
+
+        <p>
+            © 2026 - Gestor de Torneos de Fútbol
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
