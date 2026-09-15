@@ -1,0 +1,357 @@
+/* =========================
+   VARIABLES CSS
+========================= */
+
+:root {
+    --color-principal: #176b3a;
+    --color-secundario: #0f5132;
+    --color-fondo: #f4f4f4;
+    --color-blanco: white;
+    --color-texto: #222;
+
+    --espacio: 1rem;
+}
+
+
+/* =========================
+   CONFIGURACIÓN GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+
+/* =========================
+   HEADER - FLEXBOX
+========================= */
+
+.encabezado {
+    min-height: 15vh;
+
+    padding: var(--espacio);
+
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 1rem;
+
+    box-shadow: 0 4px 8px #ccc;
+}
+
+.encabezado h1 {
+    font-size: 4vw;
+}
+
+
+/* =========================
+   NAVEGACIÓN - FLEXBOX
+========================= */
+
+.navegacion {
+    display: flex;
+
+    gap: 1rem;
+}
+
+.navegacion a {
+    color: var(--color-blanco);
+
+    text-decoration: none;
+
+    padding: 0.5rem 1rem;
+
+    border-radius: 5px;
+}
+
+.navegacion a:hover {
+    background-color: var(--color-secundario);
+}
+
+
+/* =========================
+   CONTENIDO PRINCIPAL
+========================= */
+
+.contenido-principal {
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 3rem 0;
+}
+
+
+/* =========================
+   BIENVENIDA
+========================= */
+
+.bienvenida {
+    text-align: center;
+
+    margin-bottom: 2rem;
+}
+
+.bienvenida h2 {
+    color: var(--color-secundario);
+
+    margin-bottom: 1rem;
+}
+
+.bienvenida p {
+    font-size: 1rem;
+}
+
+
+/* =========================
+   TARJETAS - CSS GRID
+========================= */
+
+.menu-principal {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1rem;
+}
+
+
+/* =========================
+   TARJETAS
+========================= */
+
+.opcion {
+    background-color: var(--color-blanco);
+
+    padding: 1.5rem;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    box-shadow: 0 4px 8px #ccc;
+}
+
+.opcion h2 {
+    color: var(--color-secundario);
+
+    margin-bottom: 1rem;
+}
+
+.opcion p {
+    margin-bottom: 1.5rem;
+}
+
+
+/* =========================
+   BOTONES
+========================= */
+
+.boton {
+    display: block;
+
+    padding: 0.8rem;
+
+    color: var(--color-blanco);
+
+    text-decoration: none;
+
+    border-radius: 5px;
+}
+
+.boton-equipos {
+    background-color: var(--color-principal);
+}
+
+.boton-jugadores {
+    background-color: #198754;
+}
+
+.boton-partidos {
+    background-color: #d99a00;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.pie-pagina {
+    min-height: 12vh;
+
+    background-color: var(--color-secundario);
+
+    color: var(--color-blanco);
+
+    padding: 2rem;
+
+    text-align: center;
+}
+
+/* =========================
+   FORMULARIOS
+========================= */
+
+.formulario {
+    background-color: var(--color-blanco);
+
+    padding: 1.5rem;
+
+    margin-bottom: 2rem;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 8px #ccc;
+}
+
+.formulario h2 {
+    margin-bottom: 1.5rem;
+
+    color: var(--color-secundario);
+}
+
+.campo {
+    margin-bottom: 1rem;
+}
+
+.campo label {
+    display: block;
+
+    margin-bottom: 0.5rem;
+
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+
+    padding: 0.7rem;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+}
+
+
+/* =========================
+   TABLA
+========================= */
+
+.tabla-seccion {
+    margin-bottom: 2rem;
+}
+
+.tabla-seccion h2 {
+    margin-bottom: 1rem;
+
+    color: var(--color-secundario);
+}
+
+.tabla-contenedor {
+    width: 100%;
+
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: var(--color-blanco);
+}
+
+th,
+td {
+    padding: 0.8rem;
+
+    border: 1px solid #ccc;
+
+    text-align: center;
+}
+
+th {
+    background-color: var(--color-secundario);
+
+    color: var(--color-blanco);
+}
+
+
+/* =========================
+   BOTÓN VOLVER
+========================= */
+
+.boton-volver {
+    display: inline-block;
+
+    background-color: #555;
+
+    width: auto;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .menu-principal {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    .encabezado {
+        flex-direction: column;
+
+        padding: 1.5rem;
+    }
+
+    .encabezado h1 {
+        font-size: 8vw;
+
+        text-align: center;
+    }
+
+    .navegacion {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .menu-principal {
+        grid-template-columns: 1fr;
+    }
+
+}
+

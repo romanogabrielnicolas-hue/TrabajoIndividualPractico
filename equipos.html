@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gestor de Equipos">
+    <meta name="author" content="Desarrollado por Romano Gabriel y Dantur Xavier">
+    <meta name="keywords" content="fútbol, torneos, equipos, jugadores, partidos">
+
+    <title>Gestor de Equipos</title>
+
+    <link rel="stylesheet" href="/style/style.css">
+
+<body>
+
+    <header class="encabezado">
+
+        <h1>Gestor de Equipos</h1>
+
+        <nav class="navegacion">
+            <a href="index.html">Inicio</a>
+            <a href="equipos.html">Equipos</a>
+            <a href="jugadores.html">Jugadores</a>
+            <a href="partidos.html">Partidos</a>
+        </nav>
+
+    </header>
+
+
+    <main class="contenido-principal">
+
+        <section class="bienvenida">
+
+            <h2>Gestión de Equipos</h2>
+
+            <p>
+                Desde esta sección puede agregar y consultar
+                los equipos participantes del torneo.
+            </p>
+
+        </section>
+
+
+        <section class="formulario">
+
+            <h2>Añadir equipo</h2>
+
+            <div class="campo">
+
+                <label for="inputNombreEquipo">
+                    Nombre del equipo
+                </label>
+
+                <input
+                    id="inputNombreEquipo"
+                    type="text"
+                    placeholder="Ingrese el nombre del equipo"
+                >
+
+            </div>
+
+
+            <div class="campo">
+
+                <label for="inputColorEquipo">
+                    Color del equipo
+                </label>
+
+                <input
+                    id="inputColorEquipo"
+                    type="color"
+                >
+
+            </div>
+
+
+            <button
+                id="btnAgregarEquipo"
+                onclick="agregarEquipo()"
+                class="boton boton-equipos"
+            >
+                Agregar Equipo
+            </button>
+
+        </section>
+
+
+        <section class="tabla-seccion">
+
+            <h2>Equipos registrados</h2>
+
+            <div class="tabla-contenedor">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre del Equipo</th>
+                            <th>Color</th>
+                            <th>Cantidad de jugadores</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tablaEquipos">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <a href="index.html" class="boton boton-volver">
+            Volver al inicio
+        </a>
+
+    </main>
+
+
+    <footer class="pie-pagina">
+
+        <p>
+            © 2026 - Gestor de Torneos de Fútbol
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
