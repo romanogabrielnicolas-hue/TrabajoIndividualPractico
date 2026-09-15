@@ -191,6 +191,108 @@ body {
     background-color: #d99a00;
 }
 
+/* =========================
+   PERSONALIZACIÓN BOOTSTRAP
+========================= */
+
+.navbar-personalizada {
+    background-color: var(--color-principal);
+    box-shadow: 0 4px 10px #bbb;
+}
+
+.navbar-personalizada .nav-link {
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.2s;
+}
+
+.navbar-personalizada .nav-link:hover,
+.navbar-personalizada .nav-link.active {
+    background-color: var(--color-secundario);
+}
+
+
+/* =========================
+   BIENVENIDA PRINCIPAL
+========================= */
+
+.bienvenida-principal {
+    max-width: 800px;
+    margin: auto;
+}
+
+.icono-futbol {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.titulo-principal {
+    color: var(--color-secundario);
+}
+
+.texto-bienvenida {
+    max-width: 700px;
+    margin: 1rem auto;
+}
+
+
+/* =========================
+   TARJETAS PRINCIPALES
+========================= */
+
+.tarjeta-opcion {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta-opcion:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px #ccc !important;
+}
+
+.imagen-tarjeta {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.tarjeta-opcion h2 {
+    color: var(--color-secundario);
+}
+
+.tarjeta-opcion p {
+    min-height: 50px;
+}
+
+
+/* =========================
+   BOTONES PERSONALIZADOS
+========================= */
+
+.boton-personalizado {
+    border-radius: 8px;
+    font-weight: bold;
+    padding: 0.6rem 1.2rem;
+    transition: transform 0.2s;
+}
+
+.boton-personalizado:hover {
+    transform: scale(1.03);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer-personalizado {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
 
 /* =========================
    FOOTER
@@ -311,6 +413,12 @@ th {
     width: auto;
 }
 
+.imagen-tarjeta {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
 
 /* =========================
    TABLET
