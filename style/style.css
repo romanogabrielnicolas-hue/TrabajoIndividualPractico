@@ -486,6 +486,18 @@ th {
     background: linear-gradient(135deg, #fff8e1, #ffffff);
 }
 
+.fondo-equipos {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.35),
+        rgba(0, 0, 0, 0.35)
+    ),
+    url("/img/fondoEquipos.png");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 /* =========================
    TABLET
 ========================= */
