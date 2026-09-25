@@ -1,102 +1,122 @@
 # ⚽ Gestor de Torneos de Fútbol
 
-Sistema web desarrollado para la **gestión y administración de torneos de fútbol**, permitiendo organizar equipos, jugadores, partidos y resultados de manera sencilla y centralizada.
+Sistema web desarrollado para la **gestión y administración de equipos, jugadores y partidos de fútbol**, permitiendo organizar la información de un torneo de manera sencilla y centralizada.
 
 ## 📋 Descripción
 
-El **Gestor de Torneos de Fútbol** es un proyecto desarrollado como trabajo práctico grupal, cuyo objetivo es facilitar la organización y seguimiento de diferentes torneos deportivos.
+El **Gestor de Torneos de Fútbol** es un proyecto académico desarrollado con el objetivo de aplicar conocimientos de desarrollo web, programación y organización de proyectos mediante Git y GitHub.
 
-El sistema permite administrar la información relacionada con:
+El sistema permite administrar diferentes elementos relacionados con un torneo de fútbol:
 
-- ⚽ Torneos
-- 🏆 Equipos
+- ⚽ Equipos
 - 👤 Jugadores
 - 📅 Partidos
-- 📊 Resultados
-- 📈 Tabla de posiciones
 
-La aplicación busca centralizar toda la información del torneo y facilitar el seguimiento de su desarrollo.
+La aplicación cuenta con diferentes páginas para gestionar cada uno de estos elementos.
 
 ## 🎯 Objetivos del proyecto
 
-- Gestionar torneos de fútbol.
-- Registrar y administrar equipos participantes.
-- Registrar jugadores y asociarlos a sus respectivos equipos.
-- Programar y gestionar partidos.
-- Registrar resultados.
-- Generar y consultar tablas de posiciones.
-- Mantener organizada la información del torneo.
+- Crear una aplicación web para gestionar información de torneos de fútbol.
+- Registrar y administrar equipos.
+- Registrar y administrar jugadores.
+- Asociar jugadores a sus respectivos equipos.
+- Registrar y gestionar partidos.
+- Aplicar HTML, CSS y JavaScript en un proyecto web.
+- Implementar un diseño responsive.
+- Utilizar Git y GitHub para organizar el desarrollo.
 
 ## 🧩 Funcionalidades principales
 
-### 🏆 Gestión de torneos
-
-- Crear y administrar torneos.
-- Definir información general del torneo.
-- Consultar los torneos registrados.
-
 ### ⚽ Gestión de equipos
 
+Permite:
+
 - Registrar equipos.
-- Modificar y eliminar equipos.
-- Consultar los equipos participantes.
-- Asociar jugadores a cada equipo.
+- Modificar equipos.
+- Eliminar equipos.
+- Consultar los equipos registrados.
+- Registrar el color de cada equipo.
 
 ### 👤 Gestión de jugadores
 
+Permite:
+
 - Registrar jugadores.
-- Editar información de los jugadores.
+- Modificar información de jugadores.
+- Eliminar jugadores.
 - Asociar jugadores a un equipo.
-- Consultar el plantel de cada equipo.
+- Consultar los jugadores registrados.
 
 ### 📅 Gestión de partidos
 
-- Programar encuentros.
-- Registrar equipos participantes.
+Permite:
+
+- Registrar partidos.
+- Seleccionar los equipos participantes.
 - Registrar fecha y horario.
-- Cargar resultados.
+- Modificar partidos.
+- Eliminar partidos.
+- Consultar los partidos registrados.
 
-### 📊 Tabla de posiciones
+## 📱 Diseño Responsive
 
-Permite visualizar información como:
+El proyecto utiliza **Bootstrap 5** para adaptar la interfaz a diferentes tamaños de pantalla.
 
-| Equipo   | PJ  | PG  | PE  | PP  | GF  | GC  | DG  | Pts |
-| -------- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Equipo A | 3   | 2   | 1   | 0   | 7   | 3   | +4  | 7   |
-| Equipo B | 3   | 2   | 0   | 1   | 6   | 4   | +2  | 6   |
-| Equipo C | 3   | 1   | 0   | 2   | 4   | 6   | -2  | 3   |
+Se implementaron diferentes clases responsive de Bootstrap, por ejemplo:
 
-> _Ejemplo ilustrativo de la información que puede manejar el sistema._
+- `col-12`
+- `col-md-*`
+- `navbar-expand-lg`
+- `table-responsive`
+- `img-fluid`
 
-## 🛠️ Tecnologías utilizadas
+De esta manera, los formularios, tablas, tarjetas, imágenes y menú de navegación se adaptan a dispositivos móviles, tablets y computadoras.
 
-Actualmente el proyecto se encuentra en desarrollo.
+## 🔎 Estrategias SEO implementadas
 
-**Tecnologías:**
+Se aplicaron diferentes estrategias de **SEO On-Page** para mejorar la estructura y accesibilidad de las páginas.
 
-- HTML
-- CSS
-- Git
-- GitHub
+### Meta etiquetas
 
-## 🌱 Estructura de desarrollo
+Las páginas cuentan con:
 
-El proyecto se desarrolla utilizando **Git y GitHub** para trabajar de manera colaborativa.
+- `charset="UTF-8"` para definir correctamente la codificación de caracteres.
+- `meta viewport` para adaptar correctamente la página a dispositivos móviles.
+- `meta description` con una descripción del contenido de cada página.
+- `meta keywords` con palabras relacionadas con el proyecto.
+- `meta author` indicando el autor del proyecto.
 
-Se utilizan diferentes ramas para organizar el desarrollo de nuevas funcionalidades:
+### Títulos de las páginas
 
-Cada funcionalidad se desarrolla en su propia rama `feat`, `feature` o `refactor` y posteriormente se integra a la rama de desarrollo.
+Cada página cuenta con un título específico mediante la etiqueta `<title>`.
 
-## 👥 Integrantes
+Ejemplos:
 
-- **Romano Gabriel**
+- `Gestor de Torneos de Fútbol`
+- `Equipos - Gestor de Torneos`
+- `Jugadores - Gestor de Torneos`
+- `Partidos - Gestor de Torneos`
 
-## 📌 Estado del proyecto
+Esto permite identificar correctamente cada página.
 
-🚧 **En desarrollo**
+### Estructura semántica
 
-El proyecto se encuentra en una etapa de desarrollo y se irán incorporando nuevas funcionalidades progresivamente.
+Se utilizaron etiquetas HTML semánticas para organizar el contenido:
 
-## 📄 Proyecto académico
+- `<header>`
+- `<nav>`
+- `<main>`
+- `<section>`
+- `<footer>`
 
-Este proyecto fue realizado como parte de un **trabajo práctico grupal**, con el objetivo de aplicar conceptos de programación, desarrollo de software, gestión de proyectos y trabajo colaborativo mediante Git y GitHub.
+Esto permite una estructura más clara y organizada del contenido.
+
+### Texto alternativo en imágenes
+
+Las imágenes incluyen atributos `alt` para proporcionar una descripción del contenido visual.
+
+Ejemplo:
+
+```html
+<img src="img/equipos.png" alt="Equipos" />
+```
