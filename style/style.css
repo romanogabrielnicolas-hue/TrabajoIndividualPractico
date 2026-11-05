@@ -18,11 +18,13 @@ html,
 body {
     margin: 0;
     padding: 0;
-    width: 100%;
-    overflow-x: hidden;
 }
 
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
     color: var(--color-texto);
 
     background-image:
@@ -35,6 +37,11 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: scroll;
+}
+
+
+main {
+    flex: 1 0 auto;
 }
 
 
@@ -213,6 +220,10 @@ body {
     overflow: hidden;
 }
 
+.tabla-personalizada td:last-child {
+    white-space: nowrap;
+}
+
 
 /* =========================
    FOOTER
@@ -222,4 +233,5 @@ body {
     background-color: var(--color-secundario);
     color: var(--color-blanco);
     padding: 1rem;
+    margin-top: auto;
 }
